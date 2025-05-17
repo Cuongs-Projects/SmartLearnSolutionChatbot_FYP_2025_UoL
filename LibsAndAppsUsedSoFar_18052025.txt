@@ -1,0 +1,65 @@
+I. System-Level Applications/Services (Manual Installation & PATH Configuration)
+App/Service: Ollama
+Description: Enables running various Large Language Models (LLMs) locally on the user's machine. Used in this project to host the generative AI model (e.g., Qwen2) for natural language understanding and response generation.
+Setup: Download from ollama.com. After installation, specific LLM models are downloaded and run using the Ollama command-line interface (e.g., ollama pull qwen2, ollama run qwen2).
+
+App/Service: Tesseract OCR Engine
+Description: An optical character recognition engine used to extract text from images, such as screenshots of lecture slides containing Vietnamese or English text.
+ Setup: Download installer (e.g., from UB Mannheim Tesseract builds or the official Tesseract GitHub). During installation, ensure relevant language data packs (e.g., vie for Vietnamese, eng for English) are selected and installed. Add the Tesseract-OCR installation directory (e.g., C:\Program Files\Tesseract-OCR) to the system's PATH environment variable.
+
+App/Service: Poppler Utilities
+Description: A PDF rendering library required as a backend for the pdf2image Python library. It facilitates the conversion of PDF document pages into image formats for subsequent OCR processing.
+Setup: Download pre-compiled binaries for your operating system (e.g., from a trusted source like blog.alivate.com.au/poppler-windows/ for Windows). Extract and add the bin\ directory within the Poppler installation to the system's PATH.
+
+
+II. Core Python Environment & Libraries (Installed via pip install ...)
+
+Language: Python
+Description: The primary programming language used for developing all components of the AI Mentor chatbot.
+Setup: Install a recent stable version (e.g., Python 3.9+) from python.org. Project dependencies are managed within a virtual environment (e.g., .venv).
+
+Deep Learning Framework: torch (PyTorch)
+Description: The foundational open-source machine learning library upon which Whisper, Sentence Transformers, and many Hugging Face models operate. It provides tensor computation with strong GPU acceleration support.
+Setup: pip install torch torchvision torchaudio --index-url https://download.pytorch.org/whl/cuXXX (replace cuXXX with the appropriate CUDA version for your GPU, e.g., cu121. Obtain the precise command from pytorch.org/get-started/locally/).
+
+Local LLM Client: ollama
+Description: The official Python client library for interacting with a locally running Ollama service. Used to send prompts (including retrieved context) and receive generated responses from the chosen LLM.
+Setup: pip install ollama
+
+Speech-to-Text: openai-whisper
+Description: OpenAI's library for using Whisper models, enabling highly accurate, multilingual local audio transcription of lecture videos.
+Setup: pip install openai-whisper
+
+Text Embeddings: sentence-transformers
+Description: A Python framework for state-of-the-art sentence, text, and image embeddings. Used in this project to generate dense vector representations of text chunks and user queries for semantic similarity search within the RAG pipeline.
+Setup: pip install sentence-transformers
+
+Vector Database: chromadb
+ Description: An open-source embedding database (vector database) used to store, manage, and efficiently query the vector embeddings of the course content chunks along with their associated metadata.
+Setup: pip install chromadb
+
+NLP Model Hub & Tokenizers: transformers (Hugging Face)
+ Description: Provides general-purpose architectures (e.g., BERT, GPT) and tools for downloading and using pre-trained models. Used in this project for AutoTokenizer (e.g., for Qwen token counting) and as an underlying dependency for sentence-transformers and openai-whisper.
+Setup: pip install transformers
+
+Image Processing: Pillow (PIL Fork)
+Description: The Python Imaging Library (Fork) used for opening, manipulating, and saving many different image file formats. It's a dependency for pdf2image and for handling image inputs if visual analysis models like BLIP were to be directly integrated for image description.
+Setup: pip install Pillow
+
+PDF to Image Conversion: pdf2image
+Description: A Python library that wraps the Poppler utilities to convert pages of a PDF document into image objects, enabling OCR processing of PDF content.
+Setup: pip install pdf2image
+
+Image OCR Wrapper: pytesseract
+Description: A Python wrapper for the Tesseract OCR engine, allowing image-to-text conversion (transcription of text from images) from within Python scripts.
+Setup: pip install pytesseract
+
+III. Built-in Python Modules Used:
+
+    json: For loading and saving structured data (transcripts, metadata, configurations).
+
+    os: For operating system interactions like path manipulation, directory listing, and file checking.
+
+    re: For regular expression operations, used for text cleaning (e.g., removing <think> tags).
+
+    textwrap: (If used) For formatting text output for better readability in the terminal.

@@ -1,0 +1,114 @@
+ChromaDB client initialized. Data will be stored in: PADBRC/PADBRC_vector_DB
+Embedding model 'all-MiniLM-L6-v2' loaded successfully.
+Successfully connected to collection 'smartlearn_padbrc'.
+Total items in collection: 3393
+-----------------Please ask a Question----------------------
+Type the following to leave the chatbot: exit
+
+------------------------------------------------------------
+
+Question: Who are the instructors for this course?
+--- LLM Response ---
+[thinking...]
+
+
+The instructors for this course are the **Research Coaches/Trainers** listed on the SmartLearnSolution.com website. These professionals include experts like **Dr. Mai Ngo** (as mentioned in the context) and others whose profiles and introductions can be found on the website and in the preparation materials (e.g., the "HowToBook1On1Session" document). For the full list, you can visit their profiles on the website or watch the introductory videos provided in Step 3 of the program preparation.
+--- End of Response --- Token Count: 105 
+
+
+(additional response)
+ChromaDB client initialized. Data will be stored in: PADBRC/PADBRC_vector_DB
+Embedding model 'all-MiniLM-L6-v2' loaded successfully.
+Successfully connected to collection 'smartlearn_padbrc'.
+Total items in collection: 3393
+-----------------Please ask a Question----------------------
+Type the following to leave the chatbot: exit
+
+Enter here: hello! could you help me summarise the entire module 1 please?
+------------------------------------------------------------
+
+Question: hello! could you help me summarise the entire module 1 please?
+--- LLM Response ---
+[thinking...]
+
+
+Certainly! Here's a concise summary of **Module 1** from the **Program A: Developing Basic Research Capacities**:
+
+---
+
+### **Module 1 Overview**  
+Module 1 serves as the foundational building block for the program, equipping learners with essential tools and frameworks to develop basic research capacities. It emphasizes structured thinking, systematic planning, and practical application through a combination of resources and activities.
+
+---
+
+### **Key Components of Module 1**  
+1. **Core Resources**:  
+   - **PDF Materials**: "ModulesSyllabusChecklistAndTemplate" (pages 1–3) provide a syllabus, checklist, and templates for organizing research tasks. These resources guide learners in planning and executing research projects.  
+   - **Video Summary**: A dedicated video titled *"Module1Summary"* (available at [SmartLearnSolutions.com.au](https://smartlearnsolutions.com.au/watch/video/218)) summarizes the module's content, highlighting key concepts and steps.  
+   - **Slides**: Visual aids (slides) are provided for each module's video content, reinforcing learning through structured visuals.  
+
+2. **Key Tools Provided**:  
+   - **Thinking Tool**: A framework to structure critical thinking and problem-solving approaches.  
+   - **Checklist**: A step-by-step guide to ensure comprehensive research planning.  
+   - **Templates**: Ready-to-use formats for research outlines, data collection, and reporting.  
+
+3. **Learning Outcomes**:  
+   - Understand the core principles of research planning.  
+   - Apply templates and checklists to streamline research tasks.  
+   - Develop a structured approach to analyzing and presenting findings.  
+
+---
+
+### **Purpose and Role**  
+Module 1 prepares learners for subsequent modules by establishing a clear methodology for research. It emphasizes the importance of organization, critical thinking, and systematic execution—skills critical for advancing through the program.  
+
+---
+
+### **Next Steps**  
+After completing Module 1, learners will progress to Modules 2–4, where they will apply these foundational skills to more complex research scenarios.  
+
+Let me know if you'd like further details or clarification! 😊
+--- End of Response --- Token Count: 436
+
+-----------------Please ask a Question----------------------
+Type the following to leave the chatbot: exit
+
+Enter here: Xin chào! Bạn có thể giúp tôi tóm tắt toàn bộ module 1 được không?
+------------------------------------------------------------
+
+Question: Xin chào! Bạn có thể giúp tôi tóm tắt toàn bộ module 1 được không?
+--- LLM Response ---
+[thinking...]
+
+
+Chào bạn! Dưới đây là tóm tắt toàn bộ Module 1:  
+
+**Mục tiêu chính của Module 1**  
+- Giúp bạn hoàn thành **4 công việc cụ thể** (ví dụ: phân tích, lập kế hoạch, thực hiện, đánh giá).  
+- Hướng dẫn cách **cải thiện kết quả** thông qua phản hồi (nếu 3 đoạn đầu chưa hoàn hảo, cần điều chỉnh).  
+- Đặt **2 mục tiêu đề gia** (mục tiêu cụ thể, đo lường được, khả thi, liên quan đến chủ đề).  
+
+**Quy trình chọn chủ đề nghiên cứu**  
+1. **Lựa chọn chủ đề**:  
+   - Hỏi bản thân: "Bạn có thích chủ đề này không?"  
+   - Đảm bảo chủ đề có yếu tố mới, cập nhật và phù hợp với xu hướng hiện nay.  
+2. **Xác định 5 cách đầu dòng** để xây dựng **mind map** (sơ đồ tư duy) liên quan đến chủ đề.  
+3. **4 giai đoạn nghiên cứu** (có thể là: chọn đề tài, thu thập thông tin, phân tích, kết luận).  
+
+**Lưu ý khi chọn chủ đề**  
+- Kiểm tra **6 điều quan trọng**:  
+  1. Chủ đề có thể phát triển xa không?  
+  2. Có tính cập nhật không?  
+  3. Dữ liệu dễ tìm được không?  
+  4. Phù hợp với năng lực cá nhân không?  
+  5. Có ý nghĩa thực tiễn không?  
+  6. Đảm bảo tính hợp lệ và khả thi.  
+
+Module 1 nhấn mạnh việc kết hợp giữa **tư duy phản biện**, **kỹ năng lập kế hoạch** và **khả năng tự đánh giá** để hoàn thành nghiên cứu hiệu quả. Bạn đã hoàn thành ít nhất 4 hoạt động, nên hãy tiếp tục áp dụng các bước này để phát triển kỹ năng nghiên cứu! 😊
+--- End of Response --- Token Count: 430
+
+-----------------Please ask a Question----------------------
+Type the following to leave the chatbot: exit
+
+Enter here: exit
+------------------------------------------------------------
