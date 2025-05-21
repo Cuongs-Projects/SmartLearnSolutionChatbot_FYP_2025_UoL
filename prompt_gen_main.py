@@ -56,6 +56,7 @@ class PG_SML():
     
 
     # --- 5. Loop Through Questions, Embed, Query, and Display Results ---
+    @staticmethod
     def embed_question_and_retrieves(user_question,embedding_model,collection,prompt_type,num_results_to_fetch = 20,full_response = None):
         try:
             query_embedding = embedding_model.encode(user_question).tolist()
@@ -134,7 +135,8 @@ class PG_SML():
     def generate_answer(chosen_model,prompt_type,prompt_to_llm = None,full_response_past = None):
         print("--- LLM Response ---")
         prompt = f""" 
-        Instruction: Could you help me summarise a conversation into a compact reference form (max 2000 tokens), keeping all technical details, conclusions, user preferences, and any named resources. 
+        Instruction: Could you help me summarise a conversation into a compact reference form (max 2000 tokens)? 
+        Do keep all technical details, conclusions, user preferences, and any named resources. 
         Do not summarise greetings or unrelated chit-chat. You don't need to answer any questions you sees in the conversation, just purely summarise the conversation so you can refer to it in the future.
         You don't need to provide the token length after your summarisation.
         -----------------------
