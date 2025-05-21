@@ -137,7 +137,8 @@ class PG_SML():
         prompt = f""" 
         Instruction: Could you help me summarise a conversation into a compact reference form (max 2000 tokens)? 
         Do keep all technical details, conclusions, user preferences, and any named resources. 
-        Do not summarise greetings or unrelated chit-chat. You don't need to answer any questions you sees in the conversation, just purely summarise the conversation so you can refer to it in the future.
+        Do not summarise greetings or unrelated chit-chat. 
+        You don't need to answer any questions you sees in the conversation, just purely summarise the conversation so you can refer to it in the future.
         You don't need to provide the token length after your summarisation.
         -----------------------
         The conversation to summerise is this: {full_response_past}
