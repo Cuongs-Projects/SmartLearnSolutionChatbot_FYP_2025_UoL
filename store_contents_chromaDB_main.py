@@ -12,6 +12,8 @@ EMBEDDING_MODEL_NAME = 'all-MiniLM-L6-v2'
 base_dir = "PADBRC"
 transcribed_contents = "transcribed_contents"
 
+COLLECTION_NAME_TO_DELETE = "smartlearn_padbrc" # The specific collection you want to reset
+
 class SCCDB_SML():
     # --- 2. Initialize ChromaDB Client and Embedding Model ---
     @staticmethod
@@ -40,7 +42,6 @@ class SCCDB_SML():
         return collection
     
     # --- 3.1. Delete Collection ---
-    #COLLECTION_NAME_TO_DELETE = "smartlearn_padbrc" # The specific collection you want to reset
 
     @staticmethod
     def delete_the_collection(chromadb_path,collection_name):
@@ -174,3 +175,4 @@ class SCCDB_SML():
 if __name__ == "__main__":
     SCCDB_SML.master_store_vector_data(chromadb_path=CHROMA_DB_PATH,collection_name=COLLECTION_NAME,embed_model_name=EMBEDDING_MODEL_NAME,
                                     base_dir=base_dir,transcribed_contents=transcribed_contents)
+    # SCCDB_SML.delete_the_collection(chromadb_path=CHROMA_DB_PATH, collection_name=COLLECTION_NAME_TO_DELETE)

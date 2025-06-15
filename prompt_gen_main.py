@@ -57,7 +57,7 @@ class PG_SML():
 
     # --- 5. Loop Through Questions, Embed, Query, and Display Results ---
     @staticmethod
-    def embed_question_and_retrieves(user_question,embedding_model,collection,prompt_type,num_results_to_fetch = 20,full_response = None):
+    def embed_question_and_retrieves(user_question,embedding_model,collection,prompt_type,num_results_to_fetch = 40,full_response = None):
         try:
             query_embedding = embedding_model.encode(user_question).tolist()
         except Exception as e:
@@ -239,9 +239,10 @@ class PG_SML():
                 full_response = PG_SML.generate_answer(chosen_model = chosen_model,prompt_type=prompt_type,prompt_to_llm = prompt_to_llm,full_response_past=full_response)
             
             token_len = PG_SML.get_string_token_count(full_response = full_response)
-            print(f"\n--- End of Response --- Token Count: {token_len} \n")
+            print(f"\n--- End of Response --- Total Token Count: {token_len} \n")
             if token_len >= 30000:
                 prompt_type = 'summ'
+            iter+=1
 
 #test questions:
 #Who are the instructors for this course? -- test data retrieval
